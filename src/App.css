@@ -8,3 +8,9 @@
 .navSec {
     min-width: 915px;
 }
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 915px;
+}

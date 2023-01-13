@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navbar } from './components'
+import { Navbar, Hero, NewList } from './components'
 import './App.css'
 
 function App() {
@@ -9,6 +9,11 @@ function App() {
     <div className="App">
       <section className="navSec">
         <Navbar />
+      </section>
+
+      <section className="main">
+        <Hero />
+        <NewList />
       </section>
       
       <section id='atr'>
