@@ -1,0 +1,43 @@
+.heroContainer {
+    flex-basis: 64.5%;
+}
+.heroContainer .topSection img {
+    width: 590px;
+}
+.heroContainer .bottomSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+.heroContainer .bottomSection .title,
+.heroContainer .bottomSection .text {
+    flex-basis: 50%;
+}
+.heroContainer .bottomSection .title {
+    padding: 0 50px 0 0;
+}
+.heroContainer .bottomSection .title h1 {
+    font-family: ExtraBold;
+    font-size: 2.5rem;
+    line-height: 40px;
+}
+.heroContainer .bottomSection .text p {
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+.heroContainer .bottomSection .text button {
+    padding: 10px 30px;
+    background-color: var(--softRed);
+    border: none;
+    text-align: center;
+    color: #fff;
+    font-family: Bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.heroContainer .bottomSection .text button:hover {
+    background-color: var(--veryDarkBlue);
+}
