@@ -1,0 +1,23 @@
+.card {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #fff;
+}
+.card:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.card .top h2 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-family: Bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card .top h2:hover {
+    color: var(--softOrange);
+}
+.card .bottom p {
+    line-height: 20px;
+    opacity: 0.75;
+}
