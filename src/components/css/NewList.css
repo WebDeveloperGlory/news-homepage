@@ -1,0 +1,20 @@
+.newList {
+    flex-basis: 33.3%;
+    margin-left: 20px;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    padding: 20px;
+}
+.newList .title h1 {
+    color: var(--softOrange);
+    font-family: ExtraBold;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.newList .list {
+    color: #fff;
+}
