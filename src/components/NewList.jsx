@@ -7,7 +7,7 @@ function NewList() {
     const title = newList.title;
     const list = newList.content.map((item, i) => (
       <NewCard
-        key={`${item}-${i}`}
+        key={`${item.title}-${i}`}
         title={item.title}
         content={item.content}
       />

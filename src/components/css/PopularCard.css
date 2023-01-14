@@ -1,0 +1,42 @@
+.popCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 295px;
+    margin-left: 20px;
+}
+.popCard:nth-child(1) { margin-left: 0; }
+.popCard .left {
+    flex-basis: 31%;
+}
+.popCard .left img {
+    width: 89px;
+}
+.popCard .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    flex-basis: 66%;
+}
+.popCard .right h1 {
+    font-size: 1.15rem;
+    opacity: 0.5;
+    font-family: ExtraBold;
+    line-height: 20px;
+}
+.popCard .right h2 {
+    font-size: 1rem;
+    /* letter-spacing: 1px; */
+    font-family: Bold;
+    cursor: pointer;
+    transition: 0.5s;
+    line-height: 20px;
+}
+.popCard .right h2:hover {
+    color: var(--softRed);
+}
+.popCard .right p {
+    line-height: 20px;
+    opacity: 0.75;
+}
