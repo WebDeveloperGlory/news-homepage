@@ -1,9 +1,11 @@
-import React from 'react'
+import { useState } from 'react'
 import { navbar } from '../constants'
-import { logo } from '../assets'
+import { logo, menu, menu_close } from '../assets'
 import './css/Navbar.css'
 
 const Navbar = () => {
+    const [toggle, setToggle] = useState(true);
+
     const navLinks = navbar.map((link, i) => (
       <li key={`${link}-${i}`}>
         <a className='navLink'>{link}</a>
@@ -15,6 +17,16 @@ const Navbar = () => {
         <ul>
           {navLinks}
         </ul>
+        <div className="menuToggle">
+          <div className="top">
+            <img src={toggle ? menu : menu_close} alt="menu toggle" onClick={() => setToggle((prev) => !prev)}/>
+          </div>
+          <div className="bottom">
+            <ul className={!toggle ? "active" : null}>
+              {navLinks}
+            </ul>
+          </div>
+        </div>
     </div>
   )
 }

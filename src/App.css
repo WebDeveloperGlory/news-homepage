@@ -1,21 +1,31 @@
 .App {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.navSec {
-    min-width: 915px;
+@media screen and (min-width: 720px) {
+    .App {
+        min-height: 100vh;
+    }
+    .navSec {
+        min-width: 915px;
+    }
+    .main {
+        width: 915px;
+    }
+    .trend {
+        width: 915px;
+    }
 }
+
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 915px;
 }
 .trend {
-    width: 915px;
     display: flex;
     justify-content: center;
     align-items: center;

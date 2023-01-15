@@ -1,8 +1,12 @@
 .nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 0;
+}
+.nav .menuToggle {
+    display: none;
 }
 .nav ul {
     display: flex;
@@ -23,4 +27,42 @@
 .nav ul li a:hover {
     opacity: 1;
     color: var(--softRed);
+}
+.nav .menuToggle .bottom ul {
+    display: none;
+    transition: 0.5s;
+    animation: slideIn 2s forwards;
+}
+@media screen and (max-width: 425px) {
+    .nav {
+        padding: 25px 15px;
+        width: 100vw;
+    }
+    .nav ul {
+        display: none;
+    }
+    .nav .menuToggle {
+        position: relative;
+        display: block;
+        text-align: end;
+    }
+    .nav .menuToggle .bottom ul.active {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        z-index: 1;
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(35px);
+    }
 }
